@@ -68,10 +68,10 @@ def _import_pdf_lib():
         from pdf_lib.html_builder import build_html  # noqa: F401
         from pdf_lib.markdown_processor import preprocess_obsidian  # noqa: F401
     except ImportError:
+        # pdf_lib is vendored into the wheel; this only triggers on a broken install.
         print(
-            "Error: markdown builds require pdf_lib. Install with:\n"
-            "  pip install ebook-engine[markdown]\n"
-            "Or run from the GridLab monorepo where pdf_lib is available.",
+            "Error: markdown support is missing from this installation.\n"
+            "Reinstall with: pip install --force-reinstall ebook-engine",
             file=sys.stderr,
         )
         sys.exit(1)

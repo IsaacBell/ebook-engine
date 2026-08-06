@@ -7,6 +7,13 @@ Ebook Engine turns a folder of markdown or HTML files into a branded PDF and a d
 ## Install
 
 ```bash
+# uv — run without installing
+uvx ebook-engine --help
+
+# uv — install as a persistent tool
+uv tool install ebook-engine
+
+# pip
 pip install ebook-engine
 ```
 

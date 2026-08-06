@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ebook-engine"
-version = "0.1.0"
+version = "0.1.1"
 description = "GridLab Ebook Engine — build branded PDFs and dual-theme HTML from markdown or HTML intake."
 readme = "README.md"
 requires-python = ">=3.11"
@@ -36,5 +36,5 @@ Homepage = "https://isaacbell.io/resources/"
 Repository = "https://github.com/IsaacBell/ebook-engine"
 
 [tool.setuptools.packages.find]
-include = ["ebook_engine*"]
+include = ["ebook_engine*", "pdf_lib*"]
 namespaces = true
