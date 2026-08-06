@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Dark, premium background gradient -->
+    <radialGradient id="bg" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#090e17" />
+    </radialGradient>
+    
+    <!-- Neon cyan gradient for main branding -->
+    <linearGradient id="cyan-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Layer -->
+  <rect width="100%" height="100%" fill="url(#bg)" />
+
+  <!-- Subtle Grid Pattern for tech aesthetic -->
+  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
+    <path d="M 0 100 L 800 100 M 0 200 L 800 200 M 0 300 L 800 300 M 0 400 L 800 400 M 0 500 L 800 500 M 0 600 L 800 600 M 0 700 L 800 700" />
+    <path d="M 100 0 L 100 800 M 200 0 L 200 800 M 300 0 L 300 800 M 400 0 L 400 800 M 500 0 L 500 800 M 600 0 L 600 800 M 700 0 L 700 800" />
+  </g>
+
+  <!-- Product Title -->
+  <text x="400" y="210" font-family="system-ui, -apple-system, sans-serif" font-size="84" font-weight="800" fill="#00f2fe" text-anchor="middle" letter-spacing="-2">ebook.engine</text>
+
+  <!-- High-Impact Value Proposition -->
+  <text x="400" y="350" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="700" fill="#ffffff" text-anchor="middle">Turn simple text into</text>
+  <text x="400" y="410" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="700" fill="#ffffff" text-anchor="middle">stunning ebooks. <tspan fill="#4facfe">Instantly.</tspan></text>
+
+  <!-- Benefit Bullets (Properly Spaced) -->
+  <g font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#cbd5e1" font-weight="500" text-anchor="middle">
+    <text x="180" y="500">✓ Beautiful PDFs</text>
+    <text x="400" y="500">✓ Pro Web Books</text>
+    <text x="620" y="500">✓ Zero Design Required</text>
+  </g>
+
+  <!-- CTA Button Mockup -->
+  <g transform="translate(260, 590)">
+    <!-- Button Shadow -->
+    <rect width="280" height="64" rx="8" fill="#000000" opacity="0.4" transform="translate(0, 4)" />
+    <!-- Button Body -->
+    <rect width="280" height="64" rx="8" fill="url(#cyan-gradient)" />
+    <!-- Button Text -->
+    <text x="140" y="39" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" fill="#090e17" text-anchor="middle" letter-spacing="1">GET INSTANT ACCESS</text>
+  </g>
+
+  <!-- Bottom Mention -->
+  <text x="400" y="740" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500" fill="#64748b" text-anchor="middle">by @IkeWebStudio</text>
+</svg>

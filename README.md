@@ -2,6 +2,8 @@
 
 [![PyPI](https://img.shields.io/pypi/v/ebook-engine.svg)](https://pypi.org/project/ebook-engine/)
 
+[![Turn simple text into stunning ebooks — ebook.engine](https://raw.githubusercontent.com/IsaacBell/ebook-engine/main/cover.svg)](https://buy.stripe.com/7sY5kD0cE4x8biQ0lcfMA09)
+
 **Write in markdown. Build a branded PDF and a dual-theme HTML page. One config file.**
 
 ```bash
