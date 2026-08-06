@@ -1,0 +1,34 @@
+# ebook.toml — configuration for a GridLab Ebook Engine project.
+# Place this file in your book directory and run: ebook-engine build .
+
+[book]
+title = "My Book"
+subtitle = "A practical guide"
+author = "Author Name"
+description = "A description for meta tags and SEO."
+keywords = ["topic", "guide", "reference"]
+
+[brand]
+# Primary accent color (hex). GridLab Electric Cyan is the default.
+accent = "#00E5FF"
+# Monospace font stack for headings, code, and UI elements.
+font = '"Space Mono", ui-monospace, Menlo, monospace'
+# Text shown in the page footer.
+footer = "grid[lab]"
+
+[output]
+# Output directory relative to the book directory.
+directory = "dist"
+# Build a PDF (requires weasyprint: brew install weasyprint).
+pdf = true
+# Build a dual-theme HTML page (light/dark toggle).
+html = true
+
+[analytics]
+# Inject Vercel Analytics script (only works when deployed to Vercel).
+vercel = false
+# Google Analytics measurement ID (optional, e.g. "G-XXXXXXXXXX").
+google = ""
+# Matomo URL + site ID (optional).
+matomo_url = ""
+matomo_site_id = ""

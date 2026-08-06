@@ -1,0 +1,22 @@
+[book]
+title = "Ebook Engine"
+subtitle = "Documentation"
+author = "GridLab"
+description = "Official documentation for the Ebook Engine — build branded PDFs and dual-theme HTML from markdown or HTML."
+keywords = ["ebook", "pdf", "html", "markdown", "documentation"]
+
+[brand]
+accent = "#00E5FF"
+font = '"Space Mono", ui-monospace, Menlo, monospace'
+footer = "grid[lab]"
+
+[output]
+directory = "dist"
+pdf = false
+html = true
+
+[analytics]
+vercel = true
+google = ""
+matomo_url = ""
+matomo_site_id = ""

@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ebook-engine"
+version = "0.1.0"
+description = "GridLab Ebook Engine — build branded PDFs and dual-theme HTML from markdown or HTML intake."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    {name = "GridLab", email = "hello@gridlab.dev"},
+]
+keywords = ["ebook", "pdf", "html", "markdown", "static-site"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Text Processing :: Markup :: HTML",
+    "Topic :: Text Processing :: Markup :: Markdown",
+]
+# The engine needs markdown + pyyaml for markdown sources. HTML-only builds
+# use only the Python 3.11+ stdlib (tomllib, html.parser, subprocess).
+dependencies = ["markdown", "pyyaml"]
+
+[project.scripts]
+ebook-engine = "ebook_engine.cli:main"
+
+[project.urls]
+Homepage = "https://isaacbell.io/resources/"
+Repository = "https://github.com/IsaacBell/ebook-engine"
+
+[tool.setuptools.packages.find]
+include = ["ebook_engine*"]
+namespaces = true
